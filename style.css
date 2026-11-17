@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1c192b;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.top-header h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Barra Lateral Esquerda */
+.sidebar {
+    background-color: #111111;
+    border-radius: 12px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img-box {
+    width: 170px;
+    height: 170px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #262626;
+}
+
+.profile-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.role-badge {
+    background-color: #1f1f23;
+    color: #a1a1aa;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.social-icons a {
+    background-color: #1f1f23;
+    color: #38bdf8;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #a855f7;
+    color: #ffffff;
+}
+
+.info-box {
+    background-color: #1a1a1e;
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #27272a;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item i {
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+}
+
+.icon-email { color: #38bdf8; }
+.icon-loc { color: #a855f7; }
+
+.info-item span {
+    font-size: 0.75rem;
+    color: #a1a1aa;
+    display: block;
+}
+
+.info-item p {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #f4f4f5;
+    word-break: break-all;
+}
+
+.languages-box {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.languages-box h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #27272a;
+}
+
+.lang-item {
+    margin-bottom: 12px;
+}
+
+.lang-item strong {
+    font-size: 0.9rem;
+    color: #e4e4e7;
+    display: block;
+}
+
+.lang-item p {
+    font-size: 0.8rem;
+    color: #a1a1aa;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #9333ea, #ec4899);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+}
+
+.btn-gradient:hover {
+    opacity: 0.9;
+}
+
+/* Conteúdo Principal Direito */
+.content {
+    background-color: #111111;
+    border-radius: 12px;
+    padding: 35px;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.section-title .line {
+    height: 3px;
+    width: 120px;
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    border-radius: 2px;
+}
+
+.section p {
+    color: #a1a1aa;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item h3 {
+    font-size: 1.05rem;
+    color: #f4f4f5;
+    margin-bottom: 4px;
+}
+
+.institution, .role-sub {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d4d4d8 !important;
+    margin-bottom: 6px !important;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo-link {
+    color: #a855f7;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.repo-link:hover {
+    text-decoration: underline;
+}
+
+/* Grid de Tecnologias */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.tech-card {
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #161618;
+    transition: border-color 0.3s;
+}
+
+.tech-card:hover {
+    border-color: #a855f7;
+}
+
+.tech-icon {
+    font-size: 2.8rem;
+}
+
+.tech-card h4 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.tech-card p {
+    font-size: 0.82rem;
+    color: #a1a1aa;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 850px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}

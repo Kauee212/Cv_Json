@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Kauê</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="top-header">
+            <h1 id="header-name">Carregando...</h1>
+        </header>
+
+        <div class="main-grid">
+            
+            <!-- BARRA LATERAL ESQUERDA -->
+            <aside class="sidebar">
+                <div class="profile-img-box">
+                    <img id="profile-img" src="" alt="Foto de Perfil">
+                </div>
+
+                <div class="role-badge" id="profile-title"></div>
+
+                <div class="social-icons">
+                    <a id="link-linkedin" href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a id="link-github" href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-item">
+                        <i class="fas fa-envelope icon-email"></i>
+                        <div>
+                            <span>E-mail</span>
+                            <p id="info-email"></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt icon-loc"></i>
+                        <div>
+                            <span>Localização</span>
+                            <p id="info-location"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="languages-box">
+                    <h3>Idiomas</h3>
+                    <div id="languages-container"></div>
+                </div>
+
+                <a id="btn-github-full" href="#" target="_blank" class="btn-gradient">GitHub Completo</a>
+            </aside>
+
+            <!-- CONTEÚDO PRINCIPAL DIREITO -->
+            <main class="content">
+                
+                <section class="section">
+                    <div class="section-title">
+                        <h2>Sobre</h2>
+                        <span class="line"></span>
+                    </div>
+                    <p id="summary-desc"></p>
+                    <p id="summary-objective"></p>
+                </section>
+
+                <section class="section">
+                    <div class="section-title">
+                        <h2>Formação</h2>
+                        <span class="line"></span>
+                    </div>
+                    <div id="education-container"></div>
+                </section>
+
+                <section class="section">
+                    <div class="section-title">
+                        <h2>Projetos</h2>
+                        <span class="line"></span>
+                    </div>
+                    <div id="projects-container"></div>
+                </section>
+
+                <section class="section">
+                    <div class="section-title">
+                        <h2>Tecnologias</h2>
+                        <span class="line"></span>
+                    </div>
+                    <div class="tech-grid" id="tech-container"></div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
